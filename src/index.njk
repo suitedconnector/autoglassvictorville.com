@@ -81,3 +81,7 @@ schema: |
     </div>
   </div>
 </section>
+
+{% set faqItems = faqs.home %}
+{% set renderSchema = true %}
+{% include "faq.njk" %}

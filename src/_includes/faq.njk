@@ -1,0 +1,35 @@
+{% if renderSchema %}
+{%- set mainEntity = [] -%}
+{%- for item in faqItems -%}
+  {%- set _ = mainEntity.push({
+    "@type": "Question",
+    "name": item.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.answer
+    }
+  }) -%}
+{%- endfor -%}
+
+{%- set faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": mainEntity
+} -%}
+
+<script type="application/ld+json">{{ faqSchema | dump | safe }}</script>
+{% endif %}
+
+<section class="faq-section">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      {%- for item in faqItems %}
+      <details class="faq-item">
+        <summary class="faq-question">{{ item.question }}</summary>
+        <div class="faq-answer">{{ item.answer }}</div>
+      </details>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
