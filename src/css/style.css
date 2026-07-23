@@ -284,7 +284,7 @@ select:focus {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
   color: white;
   padding: 2rem var(--space-md);
-  margin-bottom: var(--space-2xl);
+  margin-bottom: var(--space-lg);
 }
 
 .location-header h1 {
