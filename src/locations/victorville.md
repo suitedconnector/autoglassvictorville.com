@@ -9,13 +9,6 @@ schema: |
     "name": "Auto Glass Victorville - Victorville Location",
     "description": "Auto glass repair and replacement in Victorville, CA",
     "telephone": "(760) 555-0100",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "15842 Desert Flower Road",
-      "addressLocality": "Victorville",
-      "addressRegion": "CA",
-      "postalCode": "92395"
-    },
     "url": "https://autoglassvictorville.com/locations/victorville/",
     "areaServed": "Victorville, CA"
   }
@@ -94,17 +87,13 @@ People call us because:
 
 ## How to Get Started
 
-Call us. Tell us about your glass damage. We'll give you a price right over the phone. No surprise fees. No hidden charges. Then we'll find you an appointment time that works.
+Call us. Tell us about your glass damage. We'll give you a price right over the phone. No surprise fees. No hidden charges. Then we'll get you set up with fast service.
 
-**Auto Glass Victorville**  
-15842 Desert Flower Road  
-Victorville, CA 92395  
-**(760) 555-0100**
+**Call Now: (760) 555-0100**
 
-**Hours:**  
+**Available:**  
 Monday–Friday: 8 AM to 5 PM  
-Saturday: 9 AM to 3 PM  
-Sunday: Closed
+Saturday: 9 AM to 3 PM
 
 ## Other Services We Offer
 
