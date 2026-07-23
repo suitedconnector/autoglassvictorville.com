@@ -33,7 +33,7 @@ Then there's the highways. The I-15, Highway 395, Highway 18 — trucks kick up 
 
 We see this pattern every single week in Victorville. And we know how to fix it.
 
-<img src="https://images.pexels.com/photos/4481675/pexels-photo-4481675.jpeg?w=800&h=400&fit=crop" alt="Technician installing new windshield on vehicle" loading="lazy" style="width: 100%; margin: 2rem 0; border-radius: 8px;">
+<img src="/assets/ford-f150-windshield-replacement.png?w=800&h=400&fit=crop" alt="Ford F-150 windshield replacement in progress" loading="lazy" style="width: 100%; margin: 2rem 0; border-radius: 8px;">
 
 ## What We Do for Victorville
 
@@ -43,7 +43,7 @@ We do two main things: repair small damage and replace glass that can't be fixed
 
 **Replacement.** If the damage is too big, we replace the whole windshield. An aftermarket windshield costs around $250 to $500. An OEM windshield (the kind that matches your car exactly) costs more — maybe $500 to $1,500 depending on your vehicle. Insurance usually covers most of it.
 
-<img src="https://images.pexels.com/photos/5911641/pexels-photo-5911641.jpeg?w=600&h=300&fit=crop" alt="Cracked windshield damage from impact" loading="lazy" style="width: 100%; max-width: 600px; margin: 1.5rem 0; border-radius: 8px;">
+<img src="https://cdn.pixabay.com/photo/2015/10/30/21/11/car-1014822_640.jpg?w=600&h=300&fit=crop" alt="Cracked windshield damage from impact" loading="lazy" style="width: 100%; max-width: 600px; margin: 1.5rem 0; border-radius: 8px;">
 
 ## OEM vs. Aftermarket — What's the Difference?
 
@@ -59,7 +59,7 @@ We're here in Victorville. We don't need to order parts from somewhere else or w
 
 If you can't get to us, no problem. We bring our equipment to you. We fix your glass at your home, your work, or wherever you are. That's what mobile service means.
 
-<img src="https://images.pexels.com/photos/4481671/pexels-photo-4481671.jpeg?w=600&h=400&fit=crop" alt="Professional auto glass repair technician at work" loading="lazy" style="width: 100%; max-width: 600px; margin: 1.5rem 0; border-radius: 8px;">
+<img src="https://cdn.pixabay.com/photo/2014/05/03/00/51/repair-339866_640.jpg?w=600&h=400&fit=crop" alt="Professional auto glass repair technician at work" loading="lazy" style="width: 100%; max-width: 600px; margin: 1.5rem 0; border-radius: 8px;">
 
 ## Insurance Makes It Easier
 
@@ -83,7 +83,7 @@ People call us because:
 - We show up when we say we will
 - We back our work
 
-<img src="https://images.pexels.com/photos/3808517/pexels-photo-3808517.jpeg?w=600&h=400&fit=crop" alt="Happy customer with vehicle after service" loading="lazy" style="width: 100%; max-width: 600px; margin: 1.5rem 0; border-radius: 8px;">
+<img src="https://cdn.pixabay.com/photo/2015/07/17/18/03/mechanic-849808_640.jpg?w=600&h=400&fit=crop" alt="Happy customer with vehicle after service" loading="lazy" style="width: 100%; max-width: 600px; margin: 1.5rem 0; border-radius: 8px;">
 
 ## How to Get Started
 
