@@ -291,6 +291,13 @@ select:focus {
   color: white;
 }
 
+/* Content images */
+.service-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* Footer */
 .footer {
   background: var(--primary);
