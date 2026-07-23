@@ -83,7 +83,7 @@ People call us because:
 - We show up when we say we will
 - We back our work
 
-<img src="https://cdn.pixabay.com/photo/2015/07/17/18/03/mechanic-849808_640.jpg?w=600&h=400&fit=crop" alt="Happy customer with vehicle after service" loading="lazy" style="width: 100%; max-width: 600px; margin: 1.5rem 0; border-radius: 8px;">
+<img src="/assets/happy-customer-with-new-windshield.jpg" alt="Happy customer with new windshield installed" loading="lazy" style="width: 100%; max-width: 600px; margin: 1.5rem 0; border-radius: 8px;">
 
 ## How to Get Started
 
