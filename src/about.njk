@@ -1,0 +1,69 @@
+---
+layout: layouts/base.njk
+title: About Us
+description: Learn about Auto Glass Victorville — your local auto glass repair and replacement experts serving the High Desert.
+---
+
+<section class="hero">
+  <div class="container">
+    <h1>About Auto Glass Victorville</h1>
+    <p class="hero-subtitle">Your local High Desert auto glass experts</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+    <div class="service-content">
+      <h2>Who We Are</h2>
+      <p>Auto Glass Victorville is a locally focused auto glass service dedicated to the High Desert communities of Victorville, Hesperia, Apple Valley, Adelanto, and Oak Hills. We specialize in one thing: getting your auto glass fixed fast, done right, and priced fair.</p>
+
+      <h2>What We Do</h2>
+      <p>From a small stone chip to a full windshield replacement, we handle every auto glass need:</p>
+      <ul>
+        <li>Windshield repair and replacement</li>
+        <li>Side and rear window replacement</li>
+        <li>Side mirror repair</li>
+        <li>Sunroof repair</li>
+        <li>Mobile service throughout the High Desert</li>
+      </ul>
+
+      <h2>Why the High Desert Trusts Us</h2>
+      <ul>
+        <li><strong>Local knowledge:</strong> We know how High Desert temperature swings and highway debris affect your glass — and how to fix it right.</li>
+        <li><strong>Same-day service:</strong> Damaged glass is a safety issue. We move fast.</li>
+        <li><strong>Mobile units:</strong> We come to your home or workplace at no extra charge.</li>
+        <li><strong>Insurance friendly:</strong> We handle claims paperwork with all major insurers.</li>
+        <li><strong>Warranty backed:</strong> Our workmanship comes with a lifetime warranty.</li>
+      </ul>
+
+      <h2>Our Commitment to Safety</h2>
+      <p>Your windshield is a structural safety component — it supports the roof in a rollover and provides the backstop for passenger airbag deployment. That's why we use automotive-grade adhesives, follow proper cure times, and never cut corners on installation. Safe today, safe for the life of your vehicle.</p>
+
+      <h2>Get in Touch</h2>
+      <p>Have a question or need a quote? We'd love to hear from you.</p>
+      <p>
+        <strong>Phone:</strong> <a href="tel:{{ site.phoneTracking }}">{{ site.phone }}</a><br>
+        <strong>Address:</strong> {{ site.address }}<br>
+        <strong>Hours:</strong> Mon-Fri {{ site.hours.monday }}, Sat {{ site.hours.saturday }}
+      </p>
+      <a href="/contact/" class="cta-button">Request a Free Quote</a>
+    </div>
+
+    <div class="service-sidebar">
+      <div class="sidebar-box contact-box">
+        <h3>Call Us Today</h3>
+        <a href="tel:{{ site.phoneTracking }}" class="phone-link">{{ site.phone }}</a>
+        <p class="text-small">Mon-Sat available</p>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>Service Areas</h3>
+        <ul class="footer-links" style="list-style: none;">
+          {% for location in site.locations %}
+          <li style="margin-bottom: var(--space-sm);"><a href="{{ location.url }}">{{ location.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

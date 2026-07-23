@@ -1,0 +1,102 @@
+---
+layout: layouts/base.njk
+title: Contact Us & Free Quote
+description: Contact Auto Glass Victorville for a free quote on windshield repair, auto glass replacement, or mobile service in the High Desert.
+schema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Auto Glass Victorville",
+    "description": "Auto glass repair and replacement in Victorville, CA",
+    "telephone": "(760) 555-0100",
+    "email": "info@autoglassvictorville.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "15842 Desert Flower Road",
+      "addressLocality": "Victorville",
+      "addressRegion": "CA",
+      "postalCode": "92395",
+      "addressCountry": "US"
+    },
+    "url": "https://autoglassvictorville.com/contact/",
+    "areaServed": ["Victorville, CA", "Hesperia, CA", "Apple Valley, CA", "Adelanto, CA", "Oak Hills, CA"]
+  }
+---
+
+<section class="hero">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p class="hero-subtitle">Free quotes — call, or send us the details below</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+    <div class="service-content">
+      <h2>Get Your Free Quote</h2>
+      <p>The fastest way to get a quote is to call us — we can usually give you an exact price over the phone in under 5 minutes. Prefer to write? Fill out the form and we'll get back to you the same business day.</p>
+
+      <div class="quote-form" style="max-width: 560px;">
+        <h3>Request a Quote</h3>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <input type="text" name="vehicle" placeholder="Vehicle Year / Make / Model" required>
+          <select name="service" required>
+            <option value="">Select Service</option>
+            {% for service in site.services %}
+            <option value="{{ service.name }}">{{ service.name }}</option>
+            {% endfor %}
+            <option value="Not sure">Not sure</option>
+          </select>
+          <select name="location">
+            <option value="">Your City</option>
+            {% for location in site.locations %}
+            <option value="{{ location.name }}">{{ location.name }}</option>
+            {% endfor %}
+            <option value="Other">Other</option>
+          </select>
+          <textarea name="message" placeholder="Describe the damage (size, location on glass, when it happened)..." rows="4"></textarea>
+          <button type="submit" class="cta-button">Send Quote Request</button>
+        </form>
+      </div>
+
+      <h2 class="mt-lg">Visit or Call</h2>
+      <p>
+        <strong>Auto Glass Victorville</strong><br>
+        {{ site.address }}<br>
+        <strong>Phone:</strong> <a href="tel:{{ site.phoneTracking }}">{{ site.phone }}</a><br>
+        <strong>Email:</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </p>
+
+      <h3>Business Hours</h3>
+      <ul>
+        <li>Monday – Friday: {{ site.hours.monday }}</li>
+        <li>Saturday: {{ site.hours.saturday }}</li>
+        <li>Sunday: {{ site.hours.sunday }}</li>
+      </ul>
+
+      <h3>Mobile Service Area</h3>
+      <p>We provide mobile auto glass service throughout Victorville, Hesperia, Apple Valley, Adelanto, and Oak Hills — at no extra charge.</p>
+    </div>
+
+    <div class="service-sidebar">
+      <div class="sidebar-box contact-box">
+        <h3>Fastest Option: Call</h3>
+        <a href="tel:{{ site.phoneTracking }}" class="phone-link">{{ site.phone }}</a>
+        <p class="text-small">Exact quote in ~5 minutes</p>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>What to Have Ready</h3>
+        <ul class="checklist">
+          <li>Vehicle year, make, model</li>
+          <li>Which glass is damaged</li>
+          <li>Size of the damage</li>
+          <li>Your insurance info (optional)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

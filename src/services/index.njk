@@ -1,0 +1,64 @@
+---
+layout: layouts/base.njk
+title: Auto Glass & Windshield Services
+description: Browse all auto glass repair and replacement services in Victorville, CA. From windshield repair to mobile service.
+---
+
+<section class="hero">
+  <div class="container">
+    <h1>Our Services</h1>
+    <p class="hero-subtitle">Professional auto glass solutions for all your needs</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+    <div class="service-content">
+      <h2>Comprehensive Auto Glass Services</h2>
+      <p>At Auto Glass Victorville, we offer a complete range of auto glass services to keep your vehicle safe and looking great. Our experienced technicians handle everything from small repairs to full replacements.</p>
+
+      <h3>What We Offer</h3>
+      <div class="service-grid" style="grid-template-columns: 1fr;">
+        {% for service in site.services %}
+        <a href="{{ service.url }}" class="service-card">
+          <h3>{{ service.name }}</h3>
+          <p>Learn more about this service →</p>
+        </a>
+        {% endfor %}
+      </div>
+
+      <h3>Service Process</h3>
+      <ol>
+        <li><strong>Free Assessment:</strong> Call us for a free quote. We'll evaluate the damage and provide an estimate.</li>
+        <li><strong>Schedule Appointment:</strong> Choose a time that works for you. We offer same-day service when available.</li>
+        <li><strong>Professional Installation:</strong> Our certified technicians will complete the work efficiently and safely.</li>
+        <li><strong>Quality Guarantee:</strong> All our work is backed by our lifetime warranty.</li>
+      </ol>
+
+      <h3>Why Professional Service Matters</h3>
+      <p>Auto glass isn't just about visibility—it's a critical safety component of your vehicle. Improper repair or replacement can affect:</p>
+      <ul>
+        <li>Airbag deployment</li>
+        <li>Structural integrity</li>
+        <li>Water sealing</li>
+        <li>Road safety</li>
+      </ul>
+
+      <p>That's why choosing a professional service like ours is so important. We use quality materials and proven techniques to ensure your vehicle is safe and sound.</p>
+    </div>
+
+    <div class="service-sidebar">
+      <div class="sidebar-box">
+        <h3>Get Started</h3>
+        <p>Ready to schedule your service? Contact us today for a free quote.</p>
+        <a href="/contact/" class="cta-button" style="display: block; text-align: center; margin-top: var(--space-md);">Contact Us</a>
+      </div>
+
+      <div class="sidebar-box contact-box">
+        <h3>Call Now</h3>
+        <a href="tel:{{ site.phoneTracking }}" class="phone-link">{{ site.phone }}</a>
+        <p class="text-small">Available 7 days a week</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,86 @@
+{
+  "title": "Auto Glass Victorville",
+  "description": "Professional auto glass repair and replacement services in Victorville, CA. Fast, affordable windshield repair, side mirror repair, and mobile service available.",
+  "url": "https://autoglassvictorville.com",
+  "phone": "(760) 555-0100",
+  "phoneTracking": "(760) 555-0101",
+  "address": "15842 Desert Flower Road, Victorville, CA 92395",
+  "email": "info@autoglassvictorville.com",
+  "hours": {
+    "monday": "8:00 AM - 5:00 PM",
+    "tuesday": "8:00 AM - 5:00 PM",
+    "wednesday": "8:00 AM - 5:00 PM",
+    "thursday": "8:00 AM - 5:00 PM",
+    "friday": "8:00 AM - 5:00 PM",
+    "saturday": "9:00 AM - 3:00 PM",
+    "sunday": "Closed"
+  },
+  "social": {
+    "facebook": "https://facebook.com/autoglassvictorville",
+    "google": "https://maps.google.com"
+  },
+  "locations": [
+    {
+      "name": "Victorville",
+      "slug": "victorville",
+      "url": "/locations/victorville/"
+    },
+    {
+      "name": "Hesperia",
+      "slug": "hesperia",
+      "url": "/locations/hesperia/"
+    },
+    {
+      "name": "Apple Valley",
+      "slug": "apple-valley",
+      "url": "/locations/apple-valley/"
+    },
+    {
+      "name": "Adelanto",
+      "slug": "adelanto",
+      "url": "/locations/adelanto/"
+    },
+    {
+      "name": "Oak Hills",
+      "slug": "oak-hills",
+      "url": "/locations/oak-hills/"
+    }
+  ],
+  "services": [
+    {
+      "name": "Auto Glass Repair",
+      "slug": "auto-glass-repair",
+      "url": "/services/auto-glass-repair/"
+    },
+    {
+      "name": "Auto Glass Replacement",
+      "slug": "auto-glass-replacement",
+      "url": "/services/auto-glass-replacement/"
+    },
+    {
+      "name": "Windshield Crack Repair",
+      "slug": "windshield-crack-repair",
+      "url": "/services/windshield-crack-repair/"
+    },
+    {
+      "name": "Windshield Replacement",
+      "slug": "windshield-replacement",
+      "url": "/services/windshield-replacement/"
+    },
+    {
+      "name": "Mobile Auto Glass Repair",
+      "slug": "mobile-auto-glass-repair",
+      "url": "/services/mobile-auto-glass-repair/"
+    },
+    {
+      "name": "Side Mirror Repair",
+      "slug": "side-mirror-repair",
+      "url": "/services/side-mirror-repair/"
+    },
+    {
+      "name": "Sunroof Repair",
+      "slug": "sunroof-repair",
+      "url": "/services/sunroof-repair/"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+---
+layout: layouts/base.njk
+title: Auto Glass Tips & Advice
+description: Auto glass repair tips, cost guides, and advice from the experts at Auto Glass Victorville.
+eleventyExcludeFromCollections: true
+---
+
+<section class="hero">
+  <div class="container">
+    <h1>Auto Glass Blog</h1>
+    <p class="hero-subtitle">Tips, guides, and advice from our auto glass experts</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+    <div class="service-content">
+      <div class="blog-grid" style="grid-template-columns: 1fr;">
+        {% for post in collections.post | reverse %}
+        <a href="{{ post.url }}" class="blog-post" style="display: block; padding: var(--space-lg); color: var(--text);">
+          <h2 style="font-size: 1.35rem;">{{ post.data.title }}</h2>
+          <div class="blog-meta">
+            <span>{{ post.data.date | readableDate }}</span>
+          </div>
+          <p class="blog-excerpt">{{ post.data.description }}</p>
+          <p class="no-margin" style="color: var(--primary-light); font-weight: 600;">Read more →</p>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="service-sidebar">
+      <div class="sidebar-box contact-box">
+        <h3>Need Auto Glass Help?</h3>
+        <a href="tel:{{ site.phoneTracking }}" class="phone-link">{{ site.phone }}</a>
+        <p class="text-small">Free quotes, Mon-Sat</p>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>Our Services</h3>
+        <ul class="footer-links" style="list-style: none;">
+          {% for service in site.services %}
+          <li style="margin-bottom: var(--space-sm);"><a href="{{ service.url }}">{{ service.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

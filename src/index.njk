@@ -1,0 +1,117 @@
+---
+layout: layouts/base.njk
+title: Auto Glass Repair & Replacement in Victorville, CA
+description: Professional auto glass repair and replacement services in Victorville, CA. Same-day appointments, mobile service, insurance accepted.
+schema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Auto Glass Victorville",
+    "description": "Professional auto glass repair and replacement in Victorville, CA",
+    "telephone": "(760) 555-0100",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "15842 Desert Flower Road",
+      "addressLocality": "Victorville",
+      "addressRegion": "CA",
+      "postalCode": "92395",
+      "addressCountry": "US"
+    },
+    "image": "https://autoglassvictorville.com/img/auto-glass.jpg",
+    "url": "https://autoglassvictorville.com",
+    "priceRange": "$",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "15:00"
+      }
+    ],
+    "sameAs": [
+      "https://facebook.com/autoglassvictorville",
+      "https://maps.google.com"
+    ],
+    "areaServed": ["Victorville, CA", "Hesperia, CA", "Apple Valley, CA", "Adelanto, CA", "Oak Hills, CA"],
+    "serviceType": "Auto Glass Repair"
+  }
+---
+
+<section class="hero">
+  <div class="container">
+    <h1>Auto Glass Repair & Replacement in Victorville</h1>
+    <p class="hero-subtitle">Fast, Affordable Windshield & Auto Glass Services. Same-Day Appointments Available.</p>
+    <a href="/contact/" class="cta-button">Get Free Quote Today</a>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container">
+    <div class="service-content">
+      <h2>Expert Auto Glass Services in Victorville, CA</h2>
+      <p>Auto Glass Victorville is your trusted local provider for professional auto glass repair and replacement services. Whether you need windshield repair, full glass replacement, side mirror repair, or mobile service, our experienced team is ready to help.</p>
+
+      <h3>Why Choose Auto Glass Victorville?</h3>
+      <ul>
+        <li><strong>Same-Day Appointments:</strong> We understand that broken glass can't wait. We offer same-day service whenever possible.</li>
+        <li><strong>Mobile Service:</strong> Can't come to us? No problem. Our mobile units come to you throughout Victorville and surrounding areas.</li>
+        <li><strong>Insurance Accepted:</strong> We work directly with insurance companies to make the process seamless for you.</li>
+        <li><strong>OEM & Aftermarket Options:</strong> Choose the glass option that fits your budget and vehicle.</li>
+        <li><strong>Lifetime Warranty:</strong> All our work is backed by a comprehensive warranty.</li>
+      </ul>
+
+      <h3>Our Services</h3>
+      <div class="service-grid">
+        {% for service in site.services %}
+        <a href="{{ service.url }}" class="service-card">
+          <h3>{{ service.name }}</h3>
+          <p>Learn more →</p>
+        </a>
+        {% endfor %}
+      </div>
+
+      <h3>Serving Victorville & Surrounding Areas</h3>
+      <p>We proudly serve Victorville, Hesperia, Apple Valley, Adelanto, Oak Hills, and all surrounding communities in San Bernardino County.</p>
+    </div>
+
+    <div class="service-sidebar">
+      <div class="quote-form">
+        <h3>Quick Quote Form</h3>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <select name="vehicle" required>
+            <option value="">Vehicle Year/Make/Model</option>
+            <option value="Any">Any/Unknown</option>
+          </select>
+          <textarea name="message" placeholder="Describe the damage..." rows="4" required></textarea>
+          <button type="submit" class="cta-button">Request Quote</button>
+        </form>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>Quick Facts</h3>
+        <ul class="checklist">
+          <li>15+ years experience</li>
+          <li>Licensed & insured</li>
+          <li>Same-day service</li>
+          <li>Free mobile quotes</li>
+          <li>Lifetime warranty</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-box contact-box">
+        <h3>Call Us Today</h3>
+        <a href="tel:{{ site.phoneTracking }}" class="phone-link">{{ site.phone }}</a>
+        <p class="text-small">Mon-Fri: 8AM-5PM | Sat: 9AM-3PM</p>
+      </div>
+    </div>
+  </div>
+</section>

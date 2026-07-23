@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ description or site.description }}">
+  <meta property="og:title" content="{{ title }} | {{ site.title }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#1e3a8a">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-family='Arial' fill='%231e3a8a'>🚗</text></svg>">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>{{ title }} | {{ site.title }}</title>
+  {% if schema %}
+  <script type="application/ld+json">{{ schema | safe }}</script>
+  {% endif %}
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="/" class="logo">Auto Glass Victorville</a>
+        <nav class="nav">
+          <a href="/" class="nav-link">Home</a>
+          <a href="/services/" class="nav-link">Services</a>
+          <a href="/blog/" class="nav-link">Blog</a>
+          <a href="/about/" class="nav-link">About</a>
+          <a href="/contact/" class="nav-link">Contact</a>
+        </nav>
+        <a href="tel:{{ site.phoneTracking }}" class="call-button">{{ site.phone }}</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    {{ content | safe }}
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Auto Glass Victorville</h3>
+          <p>Professional auto glass repair and replacement in Victorville, CA and surrounding areas.</p>
+          <p class="footer-phone"><a href="tel:{{ site.phoneTracking }}">{{ site.phone }}</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            {% for service in site.services %}
+            <li><a href="{{ service.url }}">{{ service.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Locations</h4>
+          <ul class="footer-links">
+            {% for location in site.locations %}
+            <li><a href="{{ location.url }}">{{ location.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <p>Mon-Fri: {{ site.hours.monday }}</p>
+          <p>Sat: {{ site.hours.saturday }}</p>
+          <p>Sun: {{ site.hours.sunday }}</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; {{ year | default("2024") }} Auto Glass Victorville. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
