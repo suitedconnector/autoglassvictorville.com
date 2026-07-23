@@ -177,7 +177,7 @@ a:hover {
 
 /* Sections */
 .content-section {
-  padding: var(--space-2xl) var(--space-md);
+  padding: var(--space-lg) var(--space-md) var(--space-2xl) var(--space-md);
 }
 
 .service-content {
