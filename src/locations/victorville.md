@@ -43,7 +43,7 @@ We do two main things: repair small damage and replace glass that can't be fixed
 
 **Replacement.** If the damage is too big, we replace the whole windshield. An aftermarket windshield costs around $250 to $500. An OEM windshield (the kind that matches your car exactly) costs more — maybe $500 to $1,500 depending on your vehicle. Insurance usually covers most of it.
 
-<img src="https://cdn.pixabay.com/photo/2015/10/30/21/11/car-1014822_640.jpg?w=600&h=300&fit=crop" alt="Cracked windshield damage from impact" loading="lazy" style="width: 100%; max-width: 600px; margin: 1.5rem 0; border-radius: 8px;">
+<img src="/assets/cracked-windshield-damage-from-rock-impact.png" alt="Cracked windshield damage from rock impact" loading="lazy" style="width: 100%; max-width: 600px; margin: 1.5rem 0; border-radius: 8px;">
 
 ## OEM vs. Aftermarket — What's the Difference?
 
@@ -59,7 +59,7 @@ We're here in Victorville. We don't need to order parts from somewhere else or w
 
 If you can't get to us, no problem. We bring our equipment to you. We fix your glass at your home, your work, or wherever you are. That's what mobile service means.
 
-<img src="https://cdn.pixabay.com/photo/2014/05/03/00/51/repair-339866_640.jpg?w=600&h=400&fit=crop" alt="Professional auto glass repair technician at work" loading="lazy" style="width: 100%; max-width: 600px; margin: 1.5rem 0; border-radius: 8px;">
+<img src="/assets/windshield-repair-victoville-technician.jpg" alt="Windshield repair technician in Victorville" loading="lazy" style="width: 100%; max-width: 600px; margin: 1.5rem 0; border-radius: 8px;">
 
 ## Insurance Makes It Easier
 
