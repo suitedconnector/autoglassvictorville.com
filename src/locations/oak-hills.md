@@ -34,13 +34,5 @@ description: Mobile auto glass repair and replacement services in Oak Hills, Cal
       <h3>Oak Hills Coverage</h3>
       <p>Full service throughout Oak Hills with quick response times. Call us today to schedule your appointment.</p>
     </div>
-
-    <div class="service-sidebar">
-      <div class="sidebar-box contact-box">
-        <h3>Call Us</h3>
-        <a href="tel:(760)555-0100" class="phone-link">(760) 555-0100</a>
-        <p class="text-small">Mobile service</p>
-      </div>
-    </div>
   </div>
 </section>

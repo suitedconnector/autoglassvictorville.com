@@ -48,22 +48,5 @@ description: Learn about Auto Glass Victorville — your local auto glass repair
       </p>
       <a href="/contact/" class="cta-button">Request a Free Quote</a>
     </div>
-
-    <div class="service-sidebar">
-      <div class="sidebar-box contact-box">
-        <h3>Call Us Today</h3>
-        <a href="tel:{{ site.phoneTracking }}" class="phone-link">{{ site.phone }}</a>
-        <p class="text-small">Mon-Sat available</p>
-      </div>
-
-      <div class="sidebar-box">
-        <h3>Service Areas</h3>
-        <ul class="footer-links" style="list-style: none;">
-          {% for location in site.locations %}
-          <li style="margin-bottom: var(--space-sm);"><a href="{{ location.url }}">{{ location.name }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
   </div>
 </section>

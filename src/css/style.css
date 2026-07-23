@@ -36,7 +36,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 950px;
   margin: 0 auto;
   padding: 0 var(--space-md);
 }
@@ -220,65 +220,6 @@ select:focus {
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
-/* Sidebar */
-.quote-form,
-.sidebar-box {
-  background: var(--bg-light);
-  border: 1px solid var(--border);
-  padding: var(--space-lg);
-  border-radius: 0.5rem;
-  margin-bottom: var(--space-lg);
-}
-
-.quote-form h3,
-.sidebar-box h3 {
-  margin-bottom: var(--space-md);
-}
-
-.sidebar-box ul {
-  list-style: none;
-  margin-left: 0;
-}
-
-.checklist li {
-  padding-left: 1.5rem;
-  margin-bottom: var(--space-sm);
-  position: relative;
-}
-
-.checklist li:before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  color: var(--success);
-  font-weight: bold;
-}
-
-.contact-box {
-  background: var(--primary-light);
-  color: white;
-  border: none;
-}
-
-.contact-box h3 {
-  color: white;
-}
-
-.contact-box a {
-  color: white;
-}
-
-.phone-link {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: var(--space-md) 0;
-}
-
-.text-small {
-  font-size: 0.875rem;
-  margin-bottom: 0;
-}
 
 /* Service Grid */
 .service-grid {
@@ -444,12 +385,6 @@ select:focus {
 @media (min-width: 1024px) {
   .container {
     padding: 0 var(--space-lg);
-  }
-
-  .content-section {
-    display: grid;
-    grid-template-columns: 1fr 350px;
-    gap: var(--space-2xl);
   }
 
   .service-grid {

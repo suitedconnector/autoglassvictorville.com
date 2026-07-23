@@ -44,13 +44,5 @@ description: Professional auto glass repair and replacement services in Hesperia
       <h3>Quick Response Times</h3>
       <p>We typically arrive within 30 minutes of your call. Your glass will be fixed on-site so you can drive away worry-free.</p>
     </div>
-
-    <div class="service-sidebar">
-      <div class="sidebar-box contact-box">
-        <h3>Mobile Service in Hesperia</h3>
-        <a href="tel:(760)555-0100" class="phone-link">(760) 555-0100</a>
-        <p class="text-small">We come to you</p>
-      </div>
-    </div>
   </div>
 </section>

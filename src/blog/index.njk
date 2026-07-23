@@ -28,22 +28,5 @@ eleventyExcludeFromCollections: true
         {% endfor %}
       </div>
     </div>
-
-    <div class="service-sidebar">
-      <div class="sidebar-box contact-box">
-        <h3>Need Auto Glass Help?</h3>
-        <a href="tel:{{ site.phoneTracking }}" class="phone-link">{{ site.phone }}</a>
-        <p class="text-small">Free quotes, Mon-Sat</p>
-      </div>
-
-      <div class="sidebar-box">
-        <h3>Our Services</h3>
-        <ul class="footer-links" style="list-style: none;">
-          {% for service in site.services %}
-          <li style="margin-bottom: var(--space-sm);"><a href="{{ service.url }}">{{ service.name }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
   </div>
 </section>

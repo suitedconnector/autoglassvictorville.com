@@ -15,43 +15,6 @@ layout: layouts/base.njk
     <div class="service-content">
       {{ content | safe }}
     </div>
-
-    <div class="service-sidebar">
-      <div class="quote-form">
-        <h3>Quick Quote Form</h3>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <input type="tel" name="phone" placeholder="Phone Number" required>
-          <select name="service" required>
-            <option value="">Select Service</option>
-            {% for service in site.services %}
-            <option value="{{ service.name }}">{{ service.name }}</option>
-            {% endfor %}
-          </select>
-          <textarea name="message" placeholder="Tell us about your vehicle..." rows="4"></textarea>
-          <button type="submit" class="cta-button">Request Quote</button>
-        </form>
-      </div>
-
-      <div class="sidebar-box">
-        <h3>Why Choose Us?</h3>
-        <ul class="checklist">
-          <li>Mobile service available</li>
-          <li>Same-day appointments</li>
-          <li>Insurance accepted</li>
-          <li>OEM & aftermarket options</li>
-          <li>Lifetime warranty available</li>
-        </ul>
-      </div>
-
-      <div class="sidebar-box contact-box">
-        <h3>Need Help?</h3>
-        <p><strong>Call us today:</strong></p>
-        <a href="tel:{{ site.phoneTracking }}" class="phone-link">{{ site.phone }}</a>
-        <p class="text-small">Available Mon-Sat</p>
-      </div>
-    </div>
   </div>
 </section>
 

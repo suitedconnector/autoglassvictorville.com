@@ -77,19 +77,5 @@ schema: |
       <h3>Ready to Get Service?</h3>
       <p>Don't wait—damaged glass can be a safety hazard. Call us today for a free quote or to schedule your appointment.</p>
     </div>
-
-    <div class="service-sidebar">
-      <div class="sidebar-box contact-box">
-        <h3>Call Us Now</h3>
-        <a href="tel:(760)555-0100" class="phone-link">(760) 555-0100</a>
-        <p class="text-small">Mon-Sat available</p>
-      </div>
-
-      <div class="sidebar-box">
-        <h3>Visit Our Shop</h3>
-        <p>15842 Desert Flower Road<br>Victorville, CA 92395</p>
-        <a href="https://maps.google.com" target="_blank" class="cta-button" style="display: block; text-align: center; margin-top: var(--space-md);">Get Directions</a>
-      </div>
-    </div>
   </div>
 </section>

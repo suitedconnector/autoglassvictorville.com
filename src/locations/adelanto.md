@@ -36,13 +36,5 @@ description: Mobile auto glass repair and replacement services in Adelanto, Cali
 
       <p>Contact us today for mobile auto glass service in Adelanto.</p>
     </div>
-
-    <div class="service-sidebar">
-      <div class="sidebar-box contact-box">
-        <h3>Mobile Service</h3>
-        <a href="tel:(760)555-0100" class="phone-link">(760) 555-0100</a>
-        <p class="text-small">We come to you</p>
-      </div>
-    </div>
   </div>
 </section>

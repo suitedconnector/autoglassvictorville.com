@@ -47,12 +47,5 @@ description: Professional auto glass repair and replacement services in Apple Va
 
       <p>Don't let damaged glass wait. Call today for fast, professional service in Apple Valley.</p>
     </div>
-
-    <div class="service-sidebar">
-      <div class="sidebar-box contact-box">
-        <h3>Call for Service</h3>
-        <a href="tel:(760)555-0100" class="phone-link">(760) 555-0100</a>
-      </div>
-    </div>
   </div>
 </section>
