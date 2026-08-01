@@ -31,11 +31,30 @@ schema: |
 
       <div class="quote-form" style="max-width: 560px;">
         <h3>Request a Quote</h3>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form id="quoteForm" action="https://formspree.io/f/mnjeknqz" method="POST">
           <input type="text" name="name" placeholder="Your Name" required>
           <input type="email" name="email" placeholder="Your Email" required>
           <input type="tel" name="phone" placeholder="Phone Number" required>
-          <input type="text" name="vehicle" placeholder="Vehicle Year / Make / Model" required>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.75rem;">
+            <select id="yearSelect" name="year" required>
+              <option value="">Year</option>
+              {% for year in vehicles.years %}
+              <option value="{{ year }}">{{ year }}</option>
+              {% endfor %}
+            </select>
+
+            <select id="makeSelect" name="make" required>
+              <option value="">Make</option>
+            </select>
+
+            <select id="modelSelect" name="model" required>
+              <option value="">Model</option>
+            </select>
+          </div>
+
+          <input type="text" id="customModel" name="customModel" placeholder="Enter custom model" style="display: none;">
+
           <select name="service" required>
             <option value="">Select Service</option>
             {% for service in site.services %}
@@ -54,6 +73,76 @@ schema: |
           <button type="submit" class="cta-button">Send Quote Request</button>
         </form>
       </div>
+
+      <script>
+        const vehicleData = {{ vehicles | dump | safe }};
+
+        function updateMakes() {
+          const year = document.getElementById('yearSelect').value;
+          const makeSelect = document.getElementById('makeSelect');
+          makeSelect.innerHTML = '<option value="">Make</option>';
+
+          if (year) {
+            const makes = [...new Set(vehicleData.vehicles
+              .filter(v => v.year == year)
+              .map(v => v.make))];
+            makes.forEach(make => {
+              makeSelect.innerHTML += `<option value="${make}">${make}</option>`;
+            });
+          }
+          updateModels();
+        }
+
+        function updateModels() {
+          const year = document.getElementById('yearSelect').value;
+          const make = document.getElementById('makeSelect').value;
+          const modelSelect = document.getElementById('modelSelect');
+          modelSelect.innerHTML = '<option value="">Model</option>';
+
+          if (year && make) {
+            const models = vehicleData.vehicles
+              .filter(v => v.year == year && v.make === make)
+              .map(v => v.model);
+            models.forEach(model => {
+              modelSelect.innerHTML += `<option value="${model}">${model}</option>`;
+            });
+          }
+          toggleCustomInput();
+        }
+
+        function toggleCustomInput() {
+          const model = document.getElementById('modelSelect').value;
+          const customInput = document.getElementById('customModel');
+          if (model === 'Other') {
+            customInput.style.display = 'block';
+            customInput.required = true;
+          } else {
+            customInput.style.display = 'none';
+            customInput.required = false;
+            customInput.value = '';
+          }
+        }
+
+        document.getElementById('yearSelect').addEventListener('change', updateMakes);
+        document.getElementById('makeSelect').addEventListener('change', updateModels);
+        document.getElementById('modelSelect').addEventListener('change', toggleCustomInput);
+
+        document.getElementById('quoteForm').addEventListener('submit', function(e) {
+          const year = document.getElementById('yearSelect').value;
+          const make = document.getElementById('makeSelect').value;
+          const model = document.getElementById('modelSelect').value;
+          const customModel = document.getElementById('customModel').value;
+
+          const finalModel = model === 'Other' ? customModel : model;
+          const vehicleString = `${year} ${make} ${finalModel}`;
+
+          const input = document.createElement('input');
+          input.type = 'hidden';
+          input.name = 'vehicle';
+          input.value = vehicleString;
+          this.appendChild(input);
+        });
+      </script>
 
       <h2 class="mt-lg">Call for Immediate Help</h2>
       <p>

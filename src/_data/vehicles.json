@@ -1,0 +1,16 @@
+{
+  "years": [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015],
+  "vehicles": [
+    { "year": 2026, "make": "Honda", "model": "Civic" },
+    { "year": 2026, "make": "Toyota", "model": "Corolla" },
+    { "year": 2026, "make": "Ford", "model": "F-150" },
+    { "year": 2026, "make": "Honda", "model": "CR-V" },
+    { "year": 2026, "make": "Toyota", "model": "RAV4" },
+    { "year": 2026, "make": "Chevrolet", "model": "Silverado" },
+    { "year": 2026, "make": "Nissan", "model": "Altima" },
+    { "year": 2026, "make": "Hyundai", "model": "Elantra" },
+    { "year": 2026, "make": "Chevrolet", "model": "Malibu" },
+    { "year": 2026, "make": "BMW", "model": "3 Series" },
+    { "year": 2026, "make": "Other", "model": "Other" }
+  ]
+}
