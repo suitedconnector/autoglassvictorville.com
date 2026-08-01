@@ -8,3 +8,22 @@
 
 [context.deploy-preview]
   environment = { NODE_ENV = "staging" }
+
+# Redirects to enforce HTTPS and non-www canonical host
+[[redirects]]
+  from = "http://www.autoglassvictorville.com/*"
+  to = "https://autoglassvictorville.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://autoglassvictorville.com/*"
+  to = "https://autoglassvictorville.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.autoglassvictorville.com/*"
+  to = "https://autoglassvictorville.com/:splat"
+  status = 301
+  force = true
