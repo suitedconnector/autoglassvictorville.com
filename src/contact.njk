@@ -90,17 +90,6 @@ schema: |
             </div>
           </div>
 
-          <div style="margin: 1rem 0; padding: 0.75rem; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 0.375rem;">
-            <div style="display: flex; align-items: flex-start; gap: 0.5rem;">
-              <input type="checkbox" id="emailMarketing" name="emailMarketing" style="margin-top: 0.25rem; cursor: pointer;">
-              <label for="emailMarketing" style="cursor: pointer; flex: 1;">
-                <strong>Email marketing</strong>
-                <div style="font-size: 0.875rem; color: #6b7280; margin-top: 0.25rem;">Receive updates about our services and promotions</div>
-                <div id="gpcNotice" style="font-size: 0.8rem; color: #dc2626; margin-top: 0.25rem; display: none;"><strong>GPC detected:</strong> Email marketing opt-in disabled</div>
-              </label>
-            </div>
-          </div>
-
           <button type="submit" class="cta-button">Send Quote Request</button>
         </form>
       </div>
@@ -219,26 +208,6 @@ schema: |
             console.error('Submission error:', err);
           }
         });
-
-        // Global Privacy Control (GPC) Detection
-        function detectGPC() {
-          const gpcEnabled = navigator.globalPrivacyControl === true;
-          const emailMarketing = document.getElementById('emailMarketing');
-          const gpcNotice = document.getElementById('gpcNotice');
-
-          if (gpcEnabled && emailMarketing && gpcNotice) {
-            emailMarketing.checked = false;
-            emailMarketing.disabled = true;
-            gpcNotice.style.display = 'block';
-            console.log('Global Privacy Control (GPC) detected - email marketing opt-in disabled');
-          }
-        }
-
-        if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', detectGPC);
-        } else {
-          detectGPC();
-        }
       </script>
 
       <h2 class="mt-lg">Call for Immediate Help</h2>
