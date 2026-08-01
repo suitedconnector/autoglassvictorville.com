@@ -77,8 +77,17 @@ schema: |
           <textarea name="message" placeholder="Describe the damage (size, location on glass, when it happened)..." rows="4"></textarea>
 
           <div style="margin: 1rem 0;">
-            <label for="photo" style="display: block; font-weight: 500; margin-bottom: 0.5rem;">Upload photo of damage (optional)</label>
-            <input type="file" id="photo" name="photo" accept="image/*">
+            <label style="display: block; font-weight: 500; margin-bottom: 0.5rem;">Photo of damage (optional)</label>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+              <div>
+                <label for="photo-upload" style="display: block; font-size: 0.9rem; margin-bottom: 0.25rem;">📁 Upload</label>
+                <input type="file" id="photo-upload" name="photo" accept="image/*">
+              </div>
+              <div>
+                <label for="photo-camera" style="display: block; font-size: 0.9rem; margin-bottom: 0.25rem;">📷 Camera</label>
+                <input type="file" id="photo-camera" name="photo" accept="image/*" capture="environment">
+              </div>
+            </div>
           </div>
 
           <button type="submit" class="cta-button">Send Quote Request</button>
@@ -159,7 +168,9 @@ schema: |
           formData.append('make', document.getElementById('makeSelect').value);
           formData.append('model', finalModel);
 
-          const photoFile = document.getElementById('photo').files[0];
+          const photoUpload = document.getElementById('photo-upload').files[0];
+          const photoCamera = document.getElementById('photo-camera').files[0];
+          const photoFile = photoUpload || photoCamera;
           if (photoFile) {
             formData.append('photo', photoFile);
           }
