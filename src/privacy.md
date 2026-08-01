@@ -23,7 +23,7 @@ This Privacy Notice for **Auto Glass Victorville** ("we," "us," or "our") descri
 
 ### Questions or Concerns?
 
-Reading this Privacy Notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you have any questions or concerns, please contact us at [info@autoglassvictorville.com](mailto:info@autoglassvictorville.com).
+Reading this Privacy Notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you have any questions or concerns, please contact us at [hello@autoglassvictorville.com](mailto:hello@autoglassvictorville.com).
 
 ---
 
@@ -125,11 +125,11 @@ You may have the right to:
 
 ### Withdrawing Your Consent
 
-If we are relying on your consent to process your personal information, you have the right to withdraw your consent at any time by contacting us at [info@autoglassvictorville.com](mailto:info@autoglassvictorville.com).
+If we are relying on your consent to process your personal information, you have the right to withdraw your consent at any time by contacting us at [hello@autoglassvictorville.com](mailto:hello@autoglassvictorville.com).
 
 ### How to Exercise Your Rights
 
-To exercise these rights, you can contact us by emailing [info@autoglassvictorville.com](mailto:info@autoglassvictorville.com).
+To exercise these rights, you can contact us by emailing [hello@autoglassvictorville.com](mailto:hello@autoglassvictorville.com).
 
 ---
 
@@ -151,7 +151,7 @@ Yes, we will update this notice as necessary to stay compliant with relevant law
 
 If you have questions or comments about this notice, you may contact us by email at:
 
-**Email**: [info@autoglassvictorville.com](mailto:info@autoglassvictorville.com)
+**Email**: [hello@autoglassvictorville.com](mailto:hello@autoglassvictorville.com)
 
 **Phone**: [(760) 555-0100](tel:(760)5550100)
 
