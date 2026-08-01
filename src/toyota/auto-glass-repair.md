@@ -7,9 +7,10 @@ permalink: /toyota/auto-glass-repair/
 
 <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/assets/windshield-repair-victoville-technician.jpg); background-size: cover; background-position: center; position: relative;">
   <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4);"></div>
-  <div class="container" style="position: relative; z-index: 1; color: white;">
+  <div class="container" style="position: relative; z-index: 1; color: white; text-align: center;">
     <h1>Toyota Auto Glass Repair</h1>
-    <p style="font-size: 18px; margin-top: 10px;">Side windows and door glass repaired on the spot.</p>
+    <p style="font-size: 18px; margin-top: 10px; margin-bottom: 20px;">Side windows and door glass repaired on the spot.</p>
+    <a href="/contact/" class="cta-button">Get Free Quote</a>
   </div>
 </section>
 
