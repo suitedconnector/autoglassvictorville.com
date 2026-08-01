@@ -2,6 +2,18 @@
 layout: layouts/base.njk
 title: Auto Glass Repair in Apple Valley, CA
 description: Professional auto glass repair and replacement services in Apple Valley, California.
+schema: |
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "AutoRepair"],
+    "name": "Auto Glass Victorville - Apple Valley",
+    "description": "Mobile auto glass repair and replacement in Apple Valley, CA",
+    "telephone": "(760) 555-0100",
+    "url": "https://autoglassvictorville.com/locations/apple-valley/",
+    "areaServed": "Apple Valley, CA",
+    "serviceType": "Mobile Auto Glass Repair",
+    "priceRange": "$"
+  }
 ---
 
 <section class="location-header">

@@ -5,12 +5,14 @@ description: Auto glass repair and replacement in Victorville, California. Same-
 schema: |
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "AutoRepair"],
     "name": "Auto Glass Victorville - Victorville Location",
     "description": "Auto glass repair and replacement in Victorville, CA",
     "telephone": "(760) 555-0100",
     "url": "https://autoglassvictorville.com/locations/victorville/",
-    "areaServed": "Victorville, CA"
+    "areaServed": "Victorville, CA",
+    "serviceType": "Auto Glass Repair",
+    "priceRange": "$"
   }
 ---
 

@@ -2,6 +2,18 @@
 layout: layouts/base.njk
 title: Auto Glass Repair in Adelanto, CA
 description: Mobile auto glass repair and replacement services in Adelanto, California.
+schema: |
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "AutoRepair"],
+    "name": "Auto Glass Victorville - Adelanto",
+    "description": "Mobile auto glass repair and replacement in Adelanto, CA",
+    "telephone": "(760) 555-0100",
+    "url": "https://autoglassvictorville.com/locations/adelanto/",
+    "areaServed": "Adelanto, CA",
+    "serviceType": "Mobile Auto Glass Repair",
+    "priceRange": "$"
+  }
 ---
 
 <section class="location-header">

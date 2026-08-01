@@ -2,6 +2,18 @@
 layout: layouts/base.njk
 title: Auto Glass Repair in Oak Hills, CA
 description: Mobile auto glass repair and replacement services in Oak Hills, California.
+schema: |
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "AutoRepair"],
+    "name": "Auto Glass Victorville - Oak Hills",
+    "description": "Mobile auto glass repair and replacement in Oak Hills, CA",
+    "telephone": "(760) 555-0100",
+    "url": "https://autoglassvictorville.com/locations/oak-hills/",
+    "areaServed": "Oak Hills, CA",
+    "serviceType": "Mobile Auto Glass Repair",
+    "priceRange": "$"
+  }
 ---
 
 <section class="location-header">

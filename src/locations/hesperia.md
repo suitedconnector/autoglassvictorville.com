@@ -2,6 +2,18 @@
 layout: layouts/base.njk
 title: Auto Glass Repair in Hesperia, CA
 description: Professional auto glass repair and replacement services in Hesperia, California. Mobile service available.
+schema: |
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "AutoRepair"],
+    "name": "Auto Glass Victorville - Hesperia",
+    "description": "Mobile auto glass repair and replacement in Hesperia, CA",
+    "telephone": "(760) 555-0100",
+    "url": "https://autoglassvictorville.com/locations/hesperia/",
+    "areaServed": "Hesperia, CA",
+    "serviceType": "Mobile Auto Glass Repair",
+    "priceRange": "$"
+  }
 ---
 
 <section class="location-header">
