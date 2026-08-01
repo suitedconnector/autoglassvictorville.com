@@ -175,6 +175,43 @@ a:hover {
   color: white;
 }
 
+/* Sticky Quote Button */
+.sticky-quote-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--accent);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.375rem;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+  transition: all 0.2s;
+}
+
+.sticky-quote-btn:hover {
+  background: #b91c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(220, 38, 38, 0.4);
+}
+
+.sticky-quote-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 640px) {
+  .sticky-quote-btn {
+    bottom: 15px;
+    right: 15px;
+    padding: 0.875rem 1.25rem;
+    font-size: 0.95rem;
+  }
+}
+
 /* Sections */
 .content-section {
   padding: var(--space-lg) var(--space-md) var(--space-2xl) var(--space-md);
