@@ -147,6 +147,15 @@ schema: |
         document.getElementById('makeSelect').addEventListener('change', updateModels);
         document.getElementById('modelSelect').addEventListener('change', toggleCustomInput);
 
+        // Hide camera button on desktop (capture attribute only works on mobile)
+        const isMobileDevice = /iPhone|iPad|Android/i.test(navigator.userAgent);
+        if (!isMobileDevice) {
+          const photoCameraInput = document.getElementById('photo-camera');
+          const cameraLabel = document.querySelector('label[for="photo-camera"]');
+          if (photoCameraInput) photoCameraInput.style.display = 'none';
+          if (cameraLabel) cameraLabel.style.display = 'none';
+        }
+
         document.getElementById('quoteForm').addEventListener('submit', async function(e) {
           e.preventDefault();
 
