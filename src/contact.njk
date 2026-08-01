@@ -31,9 +31,14 @@ schema: |
 
       <div class="quote-form" style="max-width: 560px;">
         <h3>Request a Quote</h3>
-        <form id="quoteForm" action="https://formspree.io/f/mnjeknqz" method="POST">
+        <div id="successMessage" style="display: none; background: #d4edda; color: #155724; padding: 1rem; margin-bottom: 1rem; border-radius: 4px; border: 1px solid #c3e6cb;">
+          ✓ Thank you! Your quote request has been received. We'll contact you shortly.
+        </div>
+        <div id="errorMessage" style="display: none; background: #f8d7da; color: #721c24; padding: 1rem; margin-bottom: 1rem; border-radius: 4px; border: 1px solid #f5c6cb;">
+          <span id="errorText"></span>
+        </div>
+        <form id="quoteForm" enctype="multipart/form-data">
           <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
           <input type="tel" name="phone" placeholder="Phone Number" required>
 
           <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.75rem;">
@@ -70,6 +75,12 @@ schema: |
             <option value="Other">Other</option>
           </select>
           <textarea name="message" placeholder="Describe the damage (size, location on glass, when it happened)..." rows="4"></textarea>
+
+          <div style="margin: 1rem 0;">
+            <label for="photo" style="display: block; font-weight: 500; margin-bottom: 0.5rem;">Upload photo of damage (optional)</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+          </div>
+
           <button type="submit" class="cta-button">Send Quote Request</button>
         </form>
       </div>
@@ -127,20 +138,55 @@ schema: |
         document.getElementById('makeSelect').addEventListener('change', updateModels);
         document.getElementById('modelSelect').addEventListener('change', toggleCustomInput);
 
-        document.getElementById('quoteForm').addEventListener('submit', function(e) {
-          const year = document.getElementById('yearSelect').value;
-          const make = document.getElementById('makeSelect').value;
+        document.getElementById('quoteForm').addEventListener('submit', async function(e) {
+          e.preventDefault();
+
+          const successMsg = document.getElementById('successMessage');
+          const errorMsg = document.getElementById('errorMessage');
+          const errorText = document.getElementById('errorText');
+
+          successMsg.style.display = 'none';
+          errorMsg.style.display = 'none';
+
           const model = document.getElementById('modelSelect').value;
           const customModel = document.getElementById('customModel').value;
-
           const finalModel = model === 'Other' ? customModel : model;
-          const vehicleString = `${year} ${make} ${finalModel}`;
 
-          const input = document.createElement('input');
-          input.type = 'hidden';
-          input.name = 'vehicle';
-          input.value = vehicleString;
-          this.appendChild(input);
+          const formData = new FormData();
+          formData.append('name', document.querySelector('input[name="name"]').value);
+          formData.append('phone', document.querySelector('input[name="phone"]').value);
+          formData.append('year', document.getElementById('yearSelect').value);
+          formData.append('make', document.getElementById('makeSelect').value);
+          formData.append('model', finalModel);
+
+          const photoFile = document.getElementById('photo').files[0];
+          if (photoFile) {
+            formData.append('photo', photoFile);
+          }
+
+          try {
+            const response = await fetch('/api/leads', {
+              method: 'POST',
+              body: formData,
+            });
+
+            const data = await response.json();
+
+            if (response.ok && data.success) {
+              successMsg.style.display = 'block';
+              document.getElementById('quoteForm').reset();
+              document.getElementById('makeSelect').innerHTML = '<option value="">Make</option>';
+              document.getElementById('modelSelect').innerHTML = '<option value="">Model</option>';
+              document.getElementById('customModel').style.display = 'none';
+            } else {
+              errorText.textContent = data.error || 'Failed to submit quote request';
+              errorMsg.style.display = 'block';
+            }
+          } catch (err) {
+            errorText.textContent = 'An error occurred. Please try again.';
+            errorMsg.style.display = 'block';
+            console.error('Submission error:', err);
+          }
         });
       </script>
 

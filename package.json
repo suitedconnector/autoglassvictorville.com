@@ -11,6 +11,11 @@
   "keywords": ["auto glass", "victorville", "rank and rent"],
   "author": "",
   "license": "MIT",
+  "dependencies": {
+    "busboy": "^1.6.0",
+    "cloudinary": "^1.40.0",
+    "sqlite3": "^5.1.6"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-img": "^4.0.0"
